@@ -1,0 +1,44 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one:
+  name: "Ynov"
+  adress: "27 rue Raoul"
+  zip_code: "69007"
+  city: "Lyon"
+  schedule: "Ouvert du Lundi au Vendredi de 8h15 à 17h30"
+  phone_number: "0381931602"
+  email: "info@ynov.com"
+  latitude: 122.33
+  longitude: 122.33
+  nb_student: 80
+  status: "private"
+
+two:
+  name: "École Internationale Tunon"
+  adress: "7 Rue Boissac"
+  zip_code: "69002"
+  city: "Lyon"
+  schedule: "Ouvert du Lundi au Jeudi de 8h à 18h"
+  phone_number: "0478288516"
+  email: "info@tunon.com"
+  latitude: 92.33
+  longitude: 108.23
+  nb_student: 50
+  status: "public"
+
+three:
+  name: "ECAM"
+  adress: "40 Montée St-Barthélémy"
+  zip_code: "69004"
+  city: "Lyon"
+  schedule: "Ouvert du Lundi au mardi de 10h à 13h"
+  phone_number: "0472770600"
+  email: "info@jesus.com"
+  latitude: 72.33
+  longitude: 48.23
+  nb_student: 10
+  status: "private"
