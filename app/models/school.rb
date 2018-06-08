@@ -1,4 +1,10 @@
 class School < ApplicationRecord
+
+    validates :name, presence: true
+    validates :email, format: {with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i}
+    validates :longitude, presence: true
+    before_save :format_lat_lng
+
     def self.filter(params)
         out = []
         if params[:status].blank?
@@ -9,5 +15,15 @@ class School < ApplicationRecord
 
         return out.order("name ASC")
     end
+
+    private
+    def format_lat_lng
+        self.latitude = latitude.to_f
+        self.longitude = longitude.to_f
+    end
+
+
+
+
 end
   
